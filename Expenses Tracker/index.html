@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sign-in-container">
+        <div class="tenor-gif-embed" data-postid="15216978" data-share-method="host" data-aspect-ratio="1.2749" data-width="100%"><a href="https://tenor.com/view/love-cute-waving-hi-hello-gif-15216978">Love Cute Sticker</a>from <a href="https://tenor.com/search/love-stickers">Love Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <input type="text" id="user-name" placeholder="Enter Your Name" required />
+        <button id="sign-in-btn">Sign In</button>
+    </div>
+    <div id="expense-tracker" class="container" style="display: none;">
+        <div class="sidebar">
+            <h2>Welcome, <span id="display-name">User</span> 👋</h2>
+            
+            <p>Smart tracking for smarter spending! 💰</p>
+            <div class="total-amount">
+                Total Expenses: ₹<span id="balance">0.00</span>
+            </div>
+            <div class="breakdown">
+                <h3>Expenses Breakdown</h3>
+                <ul id="expense-list"></ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="profile">
+                <img src="4-removebg-preview.png" alt="Profile Picture">
+                <h3 id="profile-name">User</h3>
+            </div>
+            <div class="add-expense">
+                <input type="number" id="amount" placeholder="Amount (₹)" />
+                <input type="text" id="description" placeholder="Description" />
+                <select id="category">
+                    <option>Select One </option>
+                    <option>🍔 Food</option>
+                    <option>✈️ Travel</option>
+                    <option>🛍️ Shopping</option>
+                    <option>🎟️ Ticket</option>
+                    <option>🏠 Rent/Accommodation</option>
+                    <option>🚗 Fuel/Transport</option>
+                    <option>🎁 Gifts/Donations</option>
+                    <option>🏥 Medical/Health</option>
+                    <option>🎨 Entertainment/Hobbies</option>
+                    <option>💼 Other</option>
+                    <option></option>
+                </select>
+                <button id="add-expense">Add Expense</button>
+            </div>
+
+            <div class="filter">
+                <input type="text" id="search" placeholder="Search Expenses..." />
+            </div>
+            <div id="search-results"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
